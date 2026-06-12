@@ -1,0 +1,11 @@
+pandas
+numpy
+geopandas
+matplotlib
+seaborn
+folium
+shapely
+pyproj
+scipy
+branca
+IPython.display
