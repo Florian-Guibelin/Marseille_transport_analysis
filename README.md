@@ -31,7 +31,7 @@ L'objectif est d'analyser :
 
 ###### Données socio-démographiques :
 
-Données carroyées INSEE à l'échelle de 200 m × 200 m (Ces données sont trop volumineuses et n'ont pas été incluses dans le dossier data. Pour les télécharger, la source est disponible dans le fichier source.txt du même dossier.) 
+Données carroyées INSEE à l'échelle de 200 m × 200 m (Ces données sont trop volumineuses et n'ont pas été incluses dans le dossier data. Pour les télécharger, la source est disponible dans le fichier source.txt du même dossier.)
 
 
 
@@ -92,6 +92,14 @@ Marseille\_transport\_analysis/
 │   ├── 01\_data\_cleaning.ipynb
 
 │   └── 02\_analysis.ipynb
+
+│
+
+├── docs/
+
+│   └── maps/
+
+│	└── 10 fichiers HTML des cartes présentées dans 02\_analysis.ipynb
 
 │
 
