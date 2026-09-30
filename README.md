@@ -21,7 +21,6 @@ L'objectif est d'analyser :
 * la répartition spatiale de la population et du niveau de vie
 * le maillage du réseau de transports en commun
 * les liens entre accessibilité au réseau et niveau de vie
-* les disparités observées dans ces liens entre les différents arrondissements de Marseille
 
 
 
