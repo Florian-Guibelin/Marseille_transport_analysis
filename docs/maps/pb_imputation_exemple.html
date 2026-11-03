@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_69ea55da08a01b532b1ae7c32f03ffb3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_69ea55da08a01b532b1ae7c32f03ffb3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_69ea55da08a01b532b1ae7c32f03ffb3 = L.map(
+                "map_69ea55da08a01b532b1ae7c32f03ffb3",
+                {
+                    center: [43.278338, 5.3881539999999735],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_efdfa4708605c41057bbd189ad3442ca = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_efdfa4708605c41057bbd189ad3442ca.addTo(map_69ea55da08a01b532b1ae7c32f03ffb3);
+        
+    
+
+        function geo_json_56bc33cfe6cb1b4c6333c130129cece4_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_56bc33cfe6cb1b4c6333c130129cece4 = L.geoJson(null, {
+                onEachFeature: geo_json_56bc33cfe6cb1b4c6333c130129cece4_onEachFeature,
+            
+            ...{
+}
+        });
+
+        function geo_json_56bc33cfe6cb1b4c6333c130129cece4_add (data) {
+            geo_json_56bc33cfe6cb1b4c6333c130129cece4
+                .addData(data);
+        }
+            geo_json_56bc33cfe6cb1b4c6333c130129cece4_add({"bbox": [5.385624999999999, 43.271387000000004, 5.392651999999998, 43.282397], "features": [{"bbox": [5.392112000000001, 43.27168700000003, 5.392112000000001, 43.27168700000003], "geometry": {"coordinates": [5.392112000000001, 43.27168700000003], "type": "Point"}, "id": "650", "properties": {"index_right": 120.0, "location_type": "0", "parent_station": null, "route_color": "#E30613", "route_id": "RTM-125", "route_long_name": "G\u00e8ze - Sainte-Marguerite Dromel", "route_short_name": "M2", "route_type": "Subway", "stop_code": "00004114", "stop_desc": null, "stop_id": "RTM-00004114", "stop_name": "M\u00e9tro Rond Point du Prado", "stop_timezone": null, "stop_url": null, "wheelchair_boarding": "1", "zone_id": null}, "type": "Feature"}, {"bbox": [5.392275000000009, 43.27145099999999, 5.392275000000009, 43.27145099999999], "geometry": {"coordinates": [5.392275000000009, 43.27145099999999], "type": "Point"}, "id": "651", "properties": {"index_right": 120.0, "location_type": "0", "parent_station": null, "route_color": "#E30613", "route_id": "RTM-125", "route_long_name": "G\u00e8ze - Sainte-Marguerite Dromel", "route_short_name": "M2", "route_type": "Subway", "stop_code": "00004116", "stop_desc": null, "stop_id": "RTM-00004116", "stop_name": "M\u00e9tro Rond Point du Prado", "stop_timezone": null, "stop_url": null, "wheelchair_boarding": "1", "zone_id": null}, "type": "Feature"}, {"bbox": [5.38912200000001, 43.276624000000005, 5.38912200000001, 43.276624000000005], "geometry": {"coordinates": [5.38912200000001, 43.276624000000005], "type": "Point"}, "id": "752", "properties": {"index_right": 120.0, "location_type": "0", "parent_station": null, "route_color": "#E30613", "route_id": "RTM-125", "route_long_name": "G\u00e8ze - Sainte-Marguerite Dromel", "route_short_name": "M2", "route_type": "Subway", "stop_code": "00001738", "stop_desc": null, "stop_id": "RTM-00001738", "stop_name": "Prado Louvain", "stop_timezone": null, "stop_url": null, "wheelchair_boarding": "2", "zone_id": null}, "type": "Feature"}, {"bbox": [5.387443000000012, 43.27915500000001, 5.387443000000012, 43.27915500000001], "geometry": {"coordinates": [5.387443000000012, 43.27915500000001], "type": "Point"}, "id": "753", "properties": {"index_right": 120.0, "location_type": "0", "parent_station": null, "route_color": "#E30613", "route_id": "RTM-125", "route_long_name": "G\u00e8ze - Sainte-Marguerite Dromel", "route_short_name": "M2", "route_type": "Subway", "stop_code": "00001696", "stop_desc": null, "stop_id": "RTM-00001696", "stop_name": "Prado P\u00e9rier", "stop_timezone": null, "stop_url": null, "wheelchair_boarding": "1", "zone_id": null}, "type": "Feature"}, {"bbox": [5.392651999999998, 43.271429999999995, 5.392651999999998, 43.271429999999995], "geometry": {"coordinates": [5.392651999999998, 43.271429999999995], "type": "Point"}, "id": "783", "properties": {"index_right": 120.0, "location_type": "0", "parent_station": null, "route_color": "#E30613", "route_id": "RTM-125", "route_long_name": "G\u00e8ze - Sainte-Marguerite Dromel", "route_short_name": "M2", "route_type": "Subway", "stop_code": "00002326", "stop_desc": null, "stop_id": "RTM-00002326", "stop_name": "Rond-Point du Prado", "stop_timezone": null, "stop_url": null, "wheelchair_boarding": "2", "zone_id": null}, "type": "Feature"}, {"bbox": [5.391943999999998, 43.271977, 5.391943999999998, 43.271977], "geometry": {"coordinates": [5.391943999999998, 43.271977], "type": "Point"}, "id": "1513", "properties": {"index_right": 120.0, "location_type": "0", "parent_station": null, "route_color": "#E30613", "route_id": "RTM-125", "route_long_name": "G\u00e8ze - Sainte-Marguerite Dromel", "route_short_name": "M2", "route_type": "Subway", "stop_code": "00004112", "stop_desc": null, "stop_id": "RTM-00004112", "stop_name": "M\u00e9tro Rond Point du Prado", "stop_timezone": null, "stop_url": null, "wheelchair_boarding": "1", "zone_id": null}, "type": "Feature"}, {"bbox": [5.3881539999999735, 43.278338, 5.3881539999999735, 43.278338], "geometry": {"coordinates": [5.3881539999999735, 43.278338], "type": "Point"}, "id": "1618", "properties": {"index_right": 120.0, "location_type": "0", "parent_station": null, "route_color": "#E30613", "route_id": "RTM-125", "route_long_name": "G\u00e8ze - Sainte-Marguerite Dromel", "route_short_name": "M2", "route_type": "Subway", "stop_code": "00001739", "stop_desc": null, "stop_id": "RTM-00001739", "stop_name": "Prado Borde", "stop_timezone": null, "stop_url": null, "wheelchair_boarding": "1", "zone_id": null}, "type": "Feature"}, {"bbox": [5.390119000000008, 43.27486200000001, 5.390119000000008, 43.27486200000001], "geometry": {"coordinates": [5.390119000000008, 43.27486200000001], "type": "Point"}, "id": "1620", "properties": {"index_right": 120.0, "location_type": "0", "parent_station": null, "route_color": "#E30613", "route_id": "RTM-125", "route_long_name": "G\u00e8ze - Sainte-Marguerite Dromel", "route_short_name": "M2", "route_type": "Subway", "stop_code": "00001737", "stop_desc": null, "stop_id": "RTM-00001737", "stop_name": "Prado Rodocanachi", "stop_timezone": null, "stop_url": null, "wheelchair_boarding": "1", "zone_id": null}, "type": "Feature"}, {"bbox": [5.39249400000001, 43.271387000000004, 5.39249400000001, 43.271387000000004], "geometry": {"coordinates": [5.39249400000001, 43.271387000000004], "type": "Point"}, "id": "1643", "properties": {"index_right": 120.0, "location_type": "0", "parent_station": null, "route_color": "#E30613", "route_id": "RTM-125", "route_long_name": "G\u00e8ze - Sainte-Marguerite Dromel", "route_short_name": "M2", "route_type": "Subway", "stop_code": "00002315", "stop_desc": null, "stop_id": "RTM-00002315", "stop_name": "Rond-Point du Prado", "stop_timezone": null, "stop_url": null, "wheelchair_boarding": "2", "zone_id": null}, "type": "Feature"}, {"bbox": [5.386240999999992, 43.28172200000001, 5.386240999999992, 43.28172200000001], "geometry": {"coordinates": [5.386240999999992, 43.28172200000001], "type": "Point"}, "id": "2541", "properties": {"index_right": 120.0, "location_type": "0", "parent_station": null, "route_color": "#E30613", "route_id": "RTM-125", "route_long_name": "G\u00e8ze - Sainte-Marguerite Dromel", "route_short_name": "M2", "route_type": "Subway", "stop_code": "00001090", "stop_desc": null, "stop_id": "RTM-00001090", "stop_name": "Prado Dupr\u00e9", "stop_timezone": null, "stop_url": null, "wheelchair_boarding": "1", "zone_id": null}, "type": "Feature"}, {"bbox": [5.385624999999999, 43.282397, 5.385624999999999, 43.282397], "geometry": {"coordinates": [5.385624999999999, 43.282397], "type": "Point"}, "id": "2542", "properties": {"index_right": 120.0, "location_type": "0", "parent_station": null, "route_color": "#E30613", "route_id": "RTM-125", "route_long_name": "G\u00e8ze - Sainte-Marguerite Dromel", "route_short_name": "M2", "route_type": "Subway", "stop_code": "00001494", "stop_desc": null, "stop_id": "RTM-00001494", "stop_name": "Prado Dupr\u00e9", "stop_timezone": null, "stop_url": null, "wheelchair_boarding": "1", "zone_id": null}, "type": "Feature"}, {"bbox": [5.387591000000012, 43.27933600000001, 5.387591000000012, 43.27933600000001], "geometry": {"coordinates": [5.387591000000012, 43.27933600000001], "type": "Point"}, "id": "2544", "properties": {"index_right": 120.0, "location_type": "0", "parent_station": null, "route_color": "#E30613", "route_id": "RTM-125", "route_long_name": "G\u00e8ze - Sainte-Marguerite Dromel", "route_short_name": "M2", "route_type": "Subway", "stop_code": "00001740", "stop_desc": null, "stop_id": "RTM-00001740", "stop_name": "Prado P\u00e9rier", "stop_timezone": null, "stop_url": null, "wheelchair_boarding": "1", "zone_id": null}, "type": "Feature"}, {"bbox": [5.391079999999966, 43.27314400000001, 5.391079999999966, 43.27314400000001], "geometry": {"coordinates": [5.391079999999966, 43.27314400000001], "type": "Point"}, "id": "2576", "properties": {"index_right": 120.0, "location_type": "0", "parent_station": null, "route_color": "#E30613", "route_id": "RTM-125", "route_long_name": "G\u00e8ze - Sainte-Marguerite Dromel", "route_short_name": "M2", "route_type": "Subway", "stop_code": "00001736", "stop_desc": null, "stop_id": "RTM-00001736", "stop_name": "Rond Point du Prado", "stop_timezone": null, "stop_url": null, "wheelchair_boarding": "1", "zone_id": null}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_56bc33cfe6cb1b4c6333c130129cece4.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+            geo_json_56bc33cfe6cb1b4c6333c130129cece4.addTo(map_69ea55da08a01b532b1ae7c32f03ffb3);
+        
+    
+
+        function geo_json_d82f205a92a7dadf09cea4beff246ba5_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_d82f205a92a7dadf09cea4beff246ba5 = L.geoJson(null, {
+                onEachFeature: geo_json_d82f205a92a7dadf09cea4beff246ba5_onEachFeature,
+            
+            ...{
+}
+        });
+
+        function geo_json_d82f205a92a7dadf09cea4beff246ba5_add (data) {
+            geo_json_d82f205a92a7dadf09cea4beff246ba5
+                .addData(data);
+        }
+            geo_json_d82f205a92a7dadf09cea4beff246ba5_add({"bbox": [5.36700106, 43.26861954, 5.40217972, 43.32794952], "features": [{"bbox": [5.36700106, 43.26861954, 5.40217972, 43.32794952], "geometry": {"coordinates": [[[5.36728287, 43.32793045], [5.36743832, 43.32736969], [5.36758232, 43.32713318], [5.36773729, 43.32691956], [5.36800671, 43.32663345], [5.36855555, 43.32605743], [5.36909294, 43.3254776], [5.36942291, 43.32497787], [5.36977577, 43.32440186], [5.37034178, 43.32351685], [5.37079906, 43.32291412], [5.37097311, 43.32270813], [5.37110758, 43.32249451], [5.37119341, 43.32226944], [5.371243, 43.32204056], [5.37139606, 43.32085037], [5.37139702, 43.320858], [5.37140512, 43.32072449], [5.3714242, 43.32058334], [5.37151527, 43.31981277], [5.37157154, 43.31934357], [5.37162256, 43.31899261], [5.37165737, 43.31882858], [5.37173796, 43.31855392], [5.37176991, 43.31845474], [5.37183428, 43.31830597], [5.37195492, 43.31807327], [5.3720274, 43.31794357], [5.3721509, 43.31776047], [5.37230921, 43.31755066], [5.37242985, 43.3174057], [5.37275171, 43.31704712], [5.37289667, 43.31689072], [5.37296343, 43.31679916], [5.37301159, 43.3167038], [5.37308168, 43.31655884], [5.37311363, 43.31641006], [5.37314844, 43.31624985], [5.37317801, 43.3159256], [5.3730092, 43.3151207], [5.37296629, 43.31485748], [5.37293959, 43.31465149], [5.37292337, 43.31454468], [5.37291813, 43.31430435], [5.37293148, 43.31413651], [5.3729744, 43.31383133], [5.37301731, 43.31358337], [5.37307644, 43.31326675], [5.37315655, 43.31299591], [5.37329626, 43.31258774], [5.37340879, 43.31224442], [5.37356424, 43.31175613], [5.37364483, 43.31150055], [5.37378407, 43.31107712], [5.37381124, 43.31070709], [5.37377357, 43.31050873], [5.37366104, 43.31021881], [5.37352657, 43.31002808], [5.37343025, 43.30991364], [5.37333918, 43.30983734], [5.37308693, 43.30971146], [5.37233734, 43.30938339], [5.37233448, 43.30938339], [5.37087154, 43.30878067], [5.36809826, 43.30762863], [5.3679533, 43.30754471], [5.36781645, 43.3074379], [5.36763668, 43.30728531], [5.36753988, 43.30716705], [5.36745977, 43.30703354], [5.36741686, 43.3069725], [5.36728239, 43.30659866], [5.36715126, 43.3061142], [5.36708403, 43.30586624], [5.36700344, 43.30556107], [5.36700106, 43.3053894], [5.36701155, 43.30527878], [5.36704636, 43.30516052], [5.36706829, 43.30506897], [5.36709213, 43.30499649], [5.3671298, 43.30492401], [5.36789131, 43.30390167], [5.36786699, 43.30387878], [5.36788893, 43.30389786], [5.36889744, 43.3026886], [5.36916018, 43.30251312], [5.36940145, 43.3024025], [5.36967516, 43.30234146], [5.37048531, 43.3021698], [5.37169218, 43.30189896], [5.37236834, 43.30177689], [5.37284565, 43.30176544], [5.37319946, 43.30176926], [5.37356949, 43.30184174], [5.37401485, 43.30197525], [5.37402487, 43.30195618], [5.37401581, 43.30197525], [5.3747282, 43.30212784], [5.37508774, 43.30224991], [5.37536669, 43.3024025], [5.37579584, 43.30269241], [5.3762145, 43.3029747], [5.37650919, 43.3031044], [5.37682581, 43.30323029], [5.37729549, 43.30332565], [5.3777914, 43.30335236], [5.37825012, 43.30327606], [5.37877321, 43.30315781], [5.37886715, 43.30313492], [5.37911367, 43.30304337], [5.37992334, 43.30236053], [5.38001776, 43.30229187], [5.38001728, 43.30229187], [5.38082266, 43.30160904], [5.38105869, 43.30129623], [5.38124084, 43.30089951], [5.38129425, 43.30050659], [5.38131618, 43.30028915], [5.38131046, 43.30013657], [5.38127279, 43.29970551], [5.38118172, 43.29918671], [5.38109589, 43.2987709], [5.38104248, 43.29837418], [5.38104248, 43.2981987], [5.38126516, 43.29679871], [5.38126564, 43.29679871], [5.38133192, 43.29650497], [5.38147688, 43.29605865], [5.38164854, 43.29578018], [5.38187933, 43.29541016], [5.38212061, 43.29504395], [5.38230324, 43.2949028], [5.38281822, 43.29442596], [5.38303232, 43.29417419], [5.38325787, 43.29377365], [5.38344002, 43.29328537], [5.3836627, 43.29282379], [5.38389111, 43.29191971], [5.38401937, 43.29143524], [5.38406801, 43.2908783], [5.3840251, 43.29014206], [5.38398218, 43.28927994], [5.38389111, 43.28829575], [5.3837676, 43.28745651], [5.38375139, 43.28702164], [5.38372993, 43.28673553], [5.38371897, 43.28650665], [5.38377285, 43.28627014], [5.38381052, 43.28608322], [5.38386393, 43.285923], [5.38396597, 43.28574753], [5.38421154, 43.28534698], [5.38435602, 43.28515625], [5.38433123, 43.28514481], [5.38435507, 43.28515625], [5.38541985, 43.28331375], [5.38627005, 43.28180313], [5.38673115, 43.28098679], [5.38712025, 43.28029633], [5.38760996, 43.27939224], [5.387609, 43.27939224], [5.38860083, 43.27769089], [5.39040327, 43.27458191], [5.39103603, 43.2734642], [5.39208794, 43.27212906], [5.39230251, 43.2718544], [5.39248991, 43.27157211], [5.39254904, 43.27145386], [5.39256239, 43.27141953], [5.39256001, 43.27141953], [5.39272881, 43.2712059], [5.39287376, 43.27096939], [5.39314175, 43.2705574], [5.39335632, 43.27020645], [5.39354944, 43.26992035], [5.39367819, 43.26977539], [5.39387417, 43.26957321], [5.39490271, 43.26885986], [5.39523125, 43.26874161], [5.39554787, 43.2686615], [5.39585876, 43.26862717], [5.39597559, 43.26861954], [5.39616585, 43.26862335], [5.39647436, 43.26865768], [5.39672375, 43.26872253], [5.39695168, 43.26879883], [5.39717054, 43.26889801], [5.39733124, 43.26899338], [5.39748955, 43.26909637], [5.39804888, 43.26945877], [5.39814663, 43.26951218], [5.39831066, 43.26957321], [5.39857864, 43.26966858], [5.39887905, 43.26973343], [5.3991046, 43.26974106], [5.39942074, 43.2697525], [5.39983416, 43.26976776], [5.40009403, 43.26979065], [5.40049124, 43.2698555], [5.40084267, 43.26996994], [5.40217972, 43.27056503]], [[5.40215921, 43.27058029], [5.40120697, 43.27016068], [5.40090942, 43.27003098], [5.40063047, 43.26992798], [5.40032768, 43.26985931], [5.40001345, 43.26981735], [5.39953089, 43.26979065], [5.39904785, 43.26977539], [5.39877462, 43.26973724], [5.39845514, 43.26966858], [5.39832115, 43.26961517], [5.39817381, 43.26955414], [5.39810133, 43.26952362], [5.39803123, 43.26948547], [5.39787054, 43.26938248], [5.39775229, 43.26930618], [5.39746284, 43.26912689], [5.39724016, 43.26897812], [5.39701223, 43.26885605], [5.39680862, 43.26877975], [5.39647579, 43.26869202], [5.396245, 43.26865768], [5.39600372, 43.2686615], [5.3957839, 43.2686615], [5.39555311, 43.26869583], [5.3951292, 43.26880264], [5.39447498, 43.26916122], [5.39391184, 43.26957703], [5.39361143, 43.26993179], [5.39304256, 43.27079391], [5.39257574, 43.2714119], [5.39260483, 43.27141953], [5.39257574, 43.2714119], [5.39236116, 43.27183151], [5.39209318, 43.27220154], [5.39131546, 43.27306747], [5.39105797, 43.27344894], [5.39090776, 43.2736969], [5.39056158, 43.27429581], [5.3900733, 43.27514648], [5.38967896, 43.27588654], [5.38949108, 43.2762146], [5.3880806, 43.27868271], [5.38764858, 43.27939224], [5.38439226, 43.28516388], [5.38439274, 43.28516388], [5.38397121, 43.28590012], [5.38388014, 43.28606033], [5.38385582, 43.28623581], [5.38385057, 43.2864418], [5.38387489, 43.28677368], [5.38389874, 43.28715134], [5.38396597, 43.28769302], [5.3840518, 43.28835678], [5.38412142, 43.28926086], [5.38418055, 43.29003906], [5.38422346, 43.2908783], [5.38366842, 43.29281998], [5.38331127, 43.29363632], [5.38305378, 43.29428482], [5.38289833, 43.29449081], [5.38269997, 43.29469299], [5.38223314, 43.29510117], [5.38182545, 43.29566574], [5.38152504, 43.29624557], [5.38142586, 43.2964592], [5.38125563, 43.29677582], [5.38114977, 43.29801559], [5.38118696, 43.29848099], [5.3812623, 43.29892349], [5.38133192, 43.29930878], [5.38141251, 43.29969788], [5.38143396, 43.30033112], [5.38141251, 43.30087662], [5.38136435, 43.30118561], [5.38129425, 43.30138397], [5.38116598, 43.30152512], [5.38090563, 43.30180359], [5.38023233, 43.30237198], [5.37942219, 43.30303192], [5.379004, 43.30332947], [5.37854242, 43.30343246], [5.37845135, 43.30344772], [5.3781724, 43.30346298], [5.37768412, 43.30346298], [5.37717485, 43.30339813], [5.37671852, 43.30328369], [5.37629461, 43.30311584], [5.37587643, 43.30288315], [5.37546349, 43.30263519], [5.37502861, 43.30236816], [5.37452459, 43.30217361], [5.3739934, 43.30198288], [5.37334967, 43.30189896], [5.37280273, 43.30184555], [5.37213755, 43.30188751], [5.37080717, 43.3021431], [5.3690958, 43.30256271], [5.36793709, 43.30389404], [5.36734438, 43.30462265], [5.36722612, 43.30475998], [5.36713266, 43.30490112], [5.36707592, 43.30514908], [5.36706018, 43.30527878], [5.36705732, 43.30553055], [5.36711645, 43.30576324], [5.36721277, 43.30615997], [5.36731768, 43.30654526], [5.36746216, 43.3069725], [5.36758852, 43.30715561], [5.36772537, 43.30731964], [5.36789703, 43.30745316], [5.36810589, 43.30759048], [5.36824799, 43.30766296], [5.36852169, 43.30777359], [5.37044239, 43.30856323], [5.37236023, 43.30934143], [5.37236071, 43.30934143], [5.37274075, 43.30949402], [5.37344646, 43.30986023], [5.3737092, 43.31019592], [5.37382746, 43.31048965], [5.37387562, 43.31070328], [5.37383795, 43.31106567], [5.37349987, 43.3121376], [5.3731246, 43.31321716], [5.37297964, 43.31408691], [5.37295818, 43.31449127], [5.37297964, 43.3147049], [5.37304401, 43.31513977], [5.37304401, 43.31514359], [5.37320757, 43.31604385], [5.37319946, 43.31624603], [5.37316751, 43.31641769], [5.37315416, 43.31651306], [5.3730979, 43.31664658], [5.37294722, 43.31690598], [5.37255049, 43.31733322], [5.37211609, 43.31788635], [5.37179947, 43.31848145], [5.37167597, 43.31893921], [5.37160635, 43.31941986], [5.37155819, 43.3198967], [5.37142944, 43.32084274], [5.37146235, 43.32084274], [5.37142801, 43.32083893], [5.37128448, 43.32204437], [5.37124538, 43.32223892], [5.37117338, 43.32244492], [5.37106848, 43.32263565], [5.37077618, 43.32301712], [5.37052536, 43.32333374], [5.37039804, 43.32350159], [5.37002516, 43.32408142], [5.36975288, 43.32450485], [5.36958122, 43.32479095], [5.36924982, 43.32531357], [5.36912537, 43.32548523], [5.36875105, 43.32590103], [5.36837578, 43.3263092], [5.36779642, 43.32692719], [5.36762619, 43.32714081], [5.36749029, 43.32739258], [5.36731482, 43.32794189], [5.36735773, 43.32794952]]], "type": "MultiLineString"}, "id": "120", "properties": {"route_color": "#E30613", "route_id": "RTM-125", "route_long_name": "G\u00e8ze - Sainte-Marguerite Dromel", "route_short_name": "M2", "route_type": "Subway"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_d82f205a92a7dadf09cea4beff246ba5.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+            geo_json_d82f205a92a7dadf09cea4beff246ba5.addTo(map_69ea55da08a01b532b1ae7c32f03ffb3);
+        
+</script>
+</html>
